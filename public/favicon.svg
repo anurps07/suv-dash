@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded box -->
+  <rect width="100" height="100" rx="24" fill="url(#glowGrad)" />
+  
+  <!-- Shield outline -->
+  <path d="M50 18 L76 30 V50 C76 68 64 80 50 86 C36 80 24 68 24 50 V30 Z" fill="url(#shieldGrad)" />
+  
+  <!-- Inner check/tick -->
+  <path d="M42 50 L48 56 L60 44" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
