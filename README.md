@@ -1,35 +1,63 @@
 # SUVIDHA – Smart Urban Digital Helpdesk Assistant
 
-SUVIDHA is a Smart Urban Digital Helpdesk Assistant designed as a public-facing,
-touch-based kiosk and web interface to improve citizen–government interactions
-in urban utility offices.
+SUVIDHA is a Smart Urban Digital Helpdesk Assistant designed as a public-facing, touch-based kiosk and web interface to improve citizen–government interactions in urban utility offices.
 
 ## Project Structure
 
-This repository contains both the frontend and backend components for the project.
+This repository uses npm workspaces to manage both the frontend and backend in a unified monorepo:
 
-- **`frontend/`**: Contains the React/Vite application.
-- **`backend/`**: Contains the Node.js Express server.
+- **`frontend/`**: The React/Vite application (User Interface).
+- **`backend/`**: The Node.js Express server (API & Static File serving).
 
 ## Prerequisites
 
 - Node.js (v18 or higher recommended)
 - npm
 
-## How to Run
+## Installation
 
-1. **Install dependencies for both frontend and backend:**
-   From the root of the project, run:
-   ```bash
-   npm install
-   ```
+From the root of the project, install dependencies for both the frontend and backend simultaneously:
+```bash
+npm install
+```
 
-2. **Start the development servers:**
-   From the root of the project, run:
-   ```bash
-   npm run dev
-   ```
-   This will use `concurrently` to start both the frontend Vite server and the backend Express server simultaneously.
+## Running the Application
+
+There are two primary ways to run this application: **Development Mode** (with hot-reloading) and **Unified / Production Mode** (single application).
+
+### 1. Unified Mode (Production-like)
+
+In this mode, the frontend is built into static files, and the Express backend serves those frontend files on a single port (running as a single full-stack application).
+
+**Step A:** Build the frontend  
+```bash
+npm run build
+```
+*(This bundles the React application into the `frontend/dist` directory).*
+
+**Step B:** Start the unified server  
+```bash
+npm start
+```
+*(This starts the Node.js backend. It will serve the API routes on `/api` and serve the built React frontend on all other routes).*
+
+**Access the Application:** Open your browser and navigate to [http://localhost:5000/](http://localhost:5000/).
+
+---
+
+### 2. Development Mode
+
+During active development, it's highly recommended to run the servers in dev mode. This enables Hot-Module Replacement (HMR) for the React frontend, meaning the page updates instantly as you change code.
+
+**Start the Dev Servers:**
+```bash
+npm run dev
+```
+*(This command uses `concurrently` to run both the Vite dev server and the Express backend server (via nodemon) simultaneously).*
+
+**Access the Application:**
+- **Frontend URL:** [http://localhost:8080/](http://localhost:8080/)
+- **Backend API URL:** [http://localhost:5000/](http://localhost:5000/)
 
 ## Features & Technology Stack
 
@@ -40,7 +68,8 @@ This repository contains both the frontend and backend components for the projec
 
 **Backend** (Node.js + Express)
 - API Services for handling citizen requests and forms
+- Static file server for unified deployment
 
 ---
 
-For more detailed information on the frontend, check `frontend/README.md`.
+For more detailed information regarding the frontend configuration, please see the `frontend/README.md`.
