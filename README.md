@@ -1,4 +1,4 @@
-🏙️ SUVIDHA – Smart Urban Digital Helpdesk Assistant
+# 🏙️ SUVIDHA – Smart Urban Digital Helpdesk Assistant
 
 SUVIDHA (Smart Urban Digital Helpdesk Assistant) is a smart urban citizen helpdesk system designed to simplify communication between citizens and municipal/utility departments.
 
