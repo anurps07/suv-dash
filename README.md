@@ -4,133 +4,43 @@ SUVIDHA is a Smart Urban Digital Helpdesk Assistant designed as a public-facing,
 touch-based kiosk and web interface to improve citizen–government interactions
 in urban utility offices.
 
-The system provides a single integrated digital platform where citizens can
-access multiple government utility services easily, transparently, and efficiently.
+## Project Structure
 
----
+This repository contains both the frontend and backend components for the project.
 
-## Project Objective
+- **`frontend/`**: Contains the React/Vite application.
+- **`backend/`**: Contains the Node.js Express server.
 
-The main objective of SUVIDHA is to:
+## Prerequisites
 
-- Improve accessibility to public utility services
-- Reduce manual workload at government offices
-- Enable self-service for citizens through kiosks
-- Increase transparency and efficiency in service delivery
-- Provide multilingual and user-friendly digital assistance
+- Node.js (v18 or higher recommended)
+- npm
 
----
+## How to Run
 
-## Supported Departments
-
-SUVIDHA integrates services from multiple civic departments:
-
-- Electricity Utility Office
-- Gas Distribution Office
-- Municipal Corporation
-  - Water Supply
-  - Waste Management
-
----
-
-## Key Features
-
-- Touch-based Kiosk User Interface
-- Multilingual Support (English / Hindi)
-- Secure Citizen Authentication (UI Flow)
-- Service Request & Complaint Submission
-- Document Upload Interface
-- Application & Complaint Status Tracking (UI)
-- Automated Receipt Generation (UI)
-- WhatsApp Chat-based Support (WhatsApp Business)
-- Responsive Design (Web + Kiosk Friendly)
-
----
-
-## Technology Stack
-
-Frontend:
-- HTML
-- CSS
-- JavaScript
-- React.js
-- Vite
-- Tailwind CSS
-
-Backend (Future Scope):
-- Supabase / API-based services
-
----
-
-## Project Folder Structure
-
-public/
-src/
- ├─ assets/
- ├─ components/
- ├─ pages/
- ├─ hooks/
- ├─ integrations/
- ├─ App.tsx
- ├─ main.tsx
- ├─ index.css
-supabase/
-.env
-package.json
-README.md
-
----
-
-## How to Run the Project
-
-1. Install dependencies
+1. **Install dependencies for both frontend and backend:**
+   From the root of the project, run:
+   ```bash
    npm install
+   ```
 
-2. Start development server
+2. **Start the development servers:**
+   From the root of the project, run:
+   ```bash
    npm run dev
+   ```
+   This will use `concurrently` to start both the frontend Vite server and the backend Express server simultaneously.
 
-3. Open in browser
-   http://localhost:8080/
----
+## Features & Technology Stack
 
-## Application Workflow
+**Frontend** (React + Vite + Tailwind CSS)
+- Touch-based Kiosk User Interface
+- Multilingual Support
+- Responsive Design
 
-Welcome Screen
-↓
-Language Selection
-↓
-Department Selection
-↓
-Service / Complaint Selection
-↓
-Form Submission
-↓
-Receipt / Status Display
-↓
-WhatsApp Help Support
+**Backend** (Node.js + Express)
+- API Services for handling citizen requests and forms
 
 ---
 
-## Future Enhancements
-
-- OTP-based Citizen Authentication
-- Backend Database Integration
-- Admin Dashboard
-- PDF Receipt Download
-- AI-based Smart Help Assistant
-- Service Analytics & Reports
-
----
-
-## Developed By
-
-Anushka Singh  
-B.Tech Computer Science & Engineering  
-Smart City / E-Governance Project
-
----
-
-## Note
-
-This project currently focuses on frontend UI/UX development.
-Backend services and real-time data handling can be added in future versions.
+For more detailed information on the frontend, check `frontend/README.md`.
