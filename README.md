@@ -51,8 +51,8 @@ Officers can:
 
 ---
 
+```markdown
 ## 🔄 Ticket Lifecycle
-
 
 OPEN
   ↓
@@ -63,6 +63,7 @@ IN PROGRESS
 RESOLVED
   ↓
 CLOSED
+
 🔁 System Workflow
 Citizen
    ↓
@@ -136,6 +137,7 @@ Nodemon
 
 👨‍🔧 Field Officer Dashboard
 
+```markdown
 📁 Project Structure
 SUVIDHA/
 ├── frontend/
