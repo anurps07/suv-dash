@@ -53,7 +53,7 @@ Officers can:
 
 ## 🔄 Ticket Lifecycle
 
-```text
+
 OPEN
   ↓
 ASSIGNED
