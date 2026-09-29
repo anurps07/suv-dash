@@ -149,7 +149,8 @@ SUVIDHA/
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-└── README.md
+└── README.
+
 ⚙️ Installation
 1. Clone Repository
 git clone https://github.com/anurps07/suv-dash.git
@@ -160,15 +161,15 @@ npm install
 npm run dev
 
 Frontend:
-
 http://localhost:8080
 
 Backend:
-
 http://localhost:5000
 
-🖥️ Kiosk Mode
+## 🌐 Live Demo
+👉 **[Open SUVIDHA Application](https://temporary-instant-carbon-5juypt3.vercel.app/)**
 
+🖥️ Kiosk Mode
 SUVIDHA is designed to support touchscreen kiosks in:
 
 🏢 Municipal offices
@@ -189,8 +190,8 @@ Complaint
 Ticket ID
      ↓
 Receipt
-🤖 Future AI Features
 
+🤖 Future AI Features
 SUVIDHA can be enhanced with:
 
 🤖 Smart complaint classification
@@ -210,8 +211,8 @@ Average resolution time
 Officer workload
 Escalated complaints
 Location-based complaint analytics
-🔐 Security
 
+🔐 Security
 Production deployment should include:
 
 Authentication & authorization
